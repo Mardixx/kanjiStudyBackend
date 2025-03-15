@@ -1,26 +1,30 @@
 package com.mardixx.kanjiStudyBackend.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.*;
 
+@Data
+@Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
+//Defining what a "KanjiCard" should have
 public class KanjiCard {
 
     @Id
-    @Generated
-    public Long Id;
+    @GeneratedValue
+    private Long Id;
 
     @NonNull
-    public String Kana;
+    private String Kana;
 
     @NonNull
-    public Character Kanji;
+    private Character Kanji;
 
     @NonNull
-    public String Translation;
+    private String Translation;
 
     @NonNull
-    public String UseCase;
+    private String UseCase;
 }
