@@ -1,4 +1,4 @@
-package com.mardixx.kanjiStudyBackend.Service;
+package com.mardixx.kanjiStudyBackend.service;
 
 import org.springframework.stereotype.Service;
 
